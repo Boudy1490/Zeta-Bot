@@ -3,7 +3,7 @@ import { googleIt } from '@bochilteam/scraper'
 let handler = async (m, { conn, command, args }) => {
     const fetch = (await import('node-fetch')).default
     let full = /f$/i.test(command)
-    let text = args.join` `
+    let text = args.join` https://whatsapp.com/channel/0029VagAnKTB4hdbFcQee90X`
     
     if (!text) return conn.reply(m.chat, '✳️ ما الذي ترغب في البحث عنه في جوجل؟', m)
     

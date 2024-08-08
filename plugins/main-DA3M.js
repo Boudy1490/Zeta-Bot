@@ -1,16 +1,16 @@
 let handler = async m => m.reply(`
 
-≡  *𝐍𝐀𝐑𝐔𝐓𝐎↳🤖↲𝐁𝐎𝐓*
+≡  *𝐙𝐄𝐓𝐀↳🤖↲𝐁𝐎𝐓*
 
 _GROUP:_
 ─────────────
 ▢ انضم إلى مجموعة البوت *العامة والدعم*
-https://chat.whatsapp.com/H93YpO0LkJNHoTmtIhcL1z
+https://chat.whatsapp.com/K8xkYLoDIFP67OU1q2E1N1
 
 ─────────────
 
-▢ *YouTube*
-• http://www.youtube.com/@HARLEY_247
+▢ *قناه البوت*
+• https://whatsapp.com/channel/0029VagAnKTB4hdbFcQee90X
 
 
 `.trim())

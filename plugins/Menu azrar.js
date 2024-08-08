@@ -23,22 +23,22 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     let more = String.fromCharCode(8206);
     let readMore = more.repeat(850);
     let taguser = '@' + m.sender.split("@s.whatsapp.net")[0];
-  await conn.sendMessage(m.chat, { react: { text: '🤖', key: m.key } })
-  const harley = 'https://telegra.ph/file/c6931834b0cff16b54135.jpg'
+  await conn.sendMessage(m.chat, { react: { text: '📂', key: m.key } })
+  const harley = 'https://telegra.ph/file/67f3f307bb5e0fb199dc1.jpg'
  
-conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { header: { title: `harley`}, body: { text: `*• ──╾⊱﹝⚜️﹞⊰╼── •*
+conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { header: { title: `harley`}, body: { text: `*• ──╾⊱﹝🔮﹞⊰╼── •*
 *مــرحــبــا بــك/ي* ${taguser}
 ╗──────¤مــعلـ🛖ـومــاتــك
 > •▫️مــســتــواك : ${level}
 > •▫️بــريــمــيــوم : ${user.premiumTime > 0 ? 'مــمـ🔱ـيز' : (isPrems ? 'مــمـ🔱ـيز' : 'عــ🍁ــادي') || ''}
 > •▫️رتــبــتــك : ${role}
-*• ──╾⊱﹝⚜️﹞⊰╼── •*
+*• ──╾⊱﹝🔮﹞⊰╼── •*
 ╗───¤مــعلــومــات الــ🤖بــوت
-> إســم الــبــوت: ناروتو
-> الــمــطــور : هــارلــي لايــت
+> إســم الــبــوت: زيتا
+> الــمــطــورين :\n🍁♟𝒜𝒷𝒹𝓊𝓁𝓇𝒶𝒽𝓂𝒶𝓃\n>𝐹𝐿𝐸𝒳♟🍁\n>𝒜𝐻𝑀𝐸𝒟♟🍁
 > مــدة الــتــشــغــيل : ${uptime}
-*• ──╾⊱﹝⚜️﹞⊰╼── •*
-> Copyright © 2024 Harley`,subtitle: "HARLEY",},header: { hasMediaAttachment: true,...(await prepareWAMessageMedia({ image : { url: harley } }, { upload: conn.waUploadToServer }, {quoted: m}))},nativeFlowMessage: { buttons: [
+*• ──╾⊱﹝🔮﹞⊰╼── •*
+> Copyright © 2024 𝓩𝓔𝓣𝓐`,subtitle: "HARLEY",},header: { hasMediaAttachment: true,...(await prepareWAMessageMedia({ image : { url: harley } }, { upload: conn.waUploadToServer }, {quoted: m}))},nativeFlowMessage: { buttons: [
 
 
                             {
@@ -47,8 +47,8 @@ conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { 
                                     title: '⌈🛡╎الــقــوائـــم╎🛡⌋',
                                     sections: [
                                         {
-                                            title: 'مــرحـ🛡ـبــا بــك فـي مــ☑هــام نـاروتـو بـ🤖ـوت',
-                                            highlight_label: 'بعبص براحتك يابرو 🤖',
+                                            title: 'مــرحـ🛡ـبــا بــك فـي مــ☑هــام زيتا بـ🤖ـوت',
+                                            highlight_label: '🧿اختار وبعبص براحتك يا قلب اخوك',
                                             rows: [
                                                 {
                                                     header: 'الــقـ👑ـســم الـاول',
@@ -66,7 +66,7 @@ conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { 
                                                     header: 'الــقـ🕋ـســم الــثــالــث',
                                                     title: 'استدعاء_قسم_الدين #الدين',
                                                     description: '',
-                                                    id: '.م2'
+                                                    id: 'قائمة2'
                                                 },
                                                 {
                                                     header: 'الــقـ👑ـســم الــرابــع',
@@ -96,19 +96,19 @@ conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { 
                                                     header: 'الــقـ🎧ـســم الــثــامـن',
                                                     title: 'استدعاء_قسم_الصوتيات #الصوتيات',
                                                     description: '',
-                                                    id: '.م7'
+                                                    id: 'صوت'
                                                 },
                                                 {
                                                     header: 'الــقـ🤖ـســم الــتــاســع',
                                                     title: 'استدعاء_قسم_الذكاء #الذكاء',
                                                     description: '',
-                                                    id: '.م8'
+                                                    id: 'ذكاء'
                                                 },
                                                 {
                                                     header: 'الــقـ🚨ـســم الــعــاشــر',
                                                     title: 'استدعاء_قسم_الدعم #الدعم',
                                                     description: '',
-                                                    id: '.م9'
+                                                    id: 'دعم'
                                                 },
                                                 {
                                                     header: 'الــقـ🔍ـســم الــحــاديــة عــشــر',
@@ -123,10 +123,11 @@ conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { 
                                                     id: '.م13'
                                                 },
                                                 {
+                                                   
                                                     header: 'الــقـ👨🏻‍💻ـســم الــثــانــي عــشــر',
-                                                    title: 'سكربت_بوت_جاهز_للتعديل_👨🏻‍💻',
+                                                    title: 'قسم السرقه',
                                                     description: '',
-                                                    id: '.م10'
+                                                    id: 'سكربت'
                                                }
                                             ]
                                         }
@@ -136,7 +137,7 @@ conn.relayMessage(m.chat, { viewOnceMessage: { message: { interactiveMessage: { 
                      },
                      {
                name: "cta_url",
-               buttonParamsJson: '{"display_text":"⌈📲╎قـنـاة الـمـطـور╎📲⌋","url":"https://whatsapp.com/channel/0029VaXddtu0lwgiREisx82C","merchant_url":"https://whatsapp.com/channel/0029VaXddtu0lwgiREisx82C"}'
+               buttonParamsJson: '{"display_text":"⌈📲╎قـنـاة الـمـطـورين╎📲⌋","url":"https://whatsapp.com/channel/0029VagAnKTB4hdbFcQee90X"}'
                             }
                         ]
                     }
